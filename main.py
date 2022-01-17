@@ -199,7 +199,7 @@ def main(args):
     with open(path, 'rb') as file:
         trained_net = pickle.load(file)
 
-    X_test, y_test = apply_sliding_window(args.dataset, X_train, y_train,
+    X_test, y_test = apply_sliding_window(args.dataset, X_test, y_test,
                                           sliding_window_size=args.sw_length,
                                           unit=args.sw_unit,
                                           sampling_rate=args.sampling_rate,
